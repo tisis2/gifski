@@ -21,4 +21,9 @@ jobs:
     - name: Run tests
       run: cargo test --verbose
     - name: Build Lib
-      run: cargo build --lib --release
+      run: cargo build --lib --verbose --release
+    - name: Upload Build Artifact
+      uses: actions/upload-artifact@v2.2.3
+      with:
+        name: gifski.dll
+        path: target\release\gifski.dll
