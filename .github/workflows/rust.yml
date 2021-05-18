@@ -25,5 +25,5 @@ jobs:
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v2.2.3
       with:
-        name: gifski.dll
-        path: /home/runner/work/gifski/gifski/target/release/gifski.dll
+        name: workdir
+        path: /home/runner/work/gifski/gifski/
